@@ -1,0 +1,4 @@
+/usr/include/spacevecalg/*.h
+/usr/include/spacevecalg/*.hh
+/usr/lib/*/pkgconfig/*
+/usr/share/doc/*

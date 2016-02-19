@@ -5,11 +5,16 @@ Build-Depends: debhelper (>=9), cmake (>=2.8),
                doxygen (>= 1.6.3), libboost-all-dev,
                python2.7, libpython2.7-dev,
                libeigen3-dev (>= 3.2.0)
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Section: science
 Homepage: http://github.com/jorisv/SpaceVecAlg
 
 Package: spacevecalg
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: SpaceVecAlg aim to implement Spatial Vector Algebra with the Eigen3 linear algebra library. All this implementation is based on appendix A of Roy Featherstone Rigid Body Dynamics Algorithms book.
+Description: Implements Spatial Vector Algebra with the Eigen3 linear algebra library. All this implementation is based on appendix A of Roy Featherstone Rigid Body Dynamics Algorithms book.
+
+Package: spacevecalg-python
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, spacevecalg
+Description: Python bindings to SpaceVecAlg, the Spatial Vector Algebra library
